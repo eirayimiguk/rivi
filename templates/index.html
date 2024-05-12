@@ -3,5 +3,7 @@
 {% block title %}rivi{% endblock %}
 
 {% block content %}
-<img src="{{ random_image_url }}" alt="Random Image" width="100%">
+{% for image_url in random_image_urls %}
+  <a href={{ image_url }}><img src="{{ image_url }}" alt="Random Image"></a>
+{% endfor %}
 {% endblock%}
