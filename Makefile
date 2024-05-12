@@ -1,4 +1,7 @@
 init:
 	pip install -r requirements.txt
 
-.PHONY: init
+run:
+	flask --app application run
+
+.PHONY: init run
