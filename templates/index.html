@@ -4,6 +4,6 @@
 
 {% block content %}
 {% for image_url in random_image_urls %}
-  <a href={{ image_url }}><img src="{{ image_url }}" alt="Random Image"></a>
+  <img src="{{ image_url }}" alt="Random Image">
 {% endfor %}
 {% endblock%}

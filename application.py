@@ -14,7 +14,7 @@ def index():
         if filename.split(".")[-1].lower() in ["jpg", "jpeg", "png"]
     ]
 
-    random_images = random.sample(image_files, 3)
+    random_images = random.sample(image_files, 1)
     random_image_urls = [
         url_for("static", filename=f"images/{image}") for image in random_images
     ]
