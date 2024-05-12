@@ -11,7 +11,7 @@ def index():
     image_files = [
         filename
         for filename in os.listdir("static/images")
-        if filename.split(".")[-1].lower() in ["jpg", "jpeg", "png"]
+        if filename.split(".")[-1].lower() in ["jpg", "jpeg", "png", "webp"]
     ]
 
     random_images = random.sample(image_files, 1)
